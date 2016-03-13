@@ -10,119 +10,103 @@ import apps.OverallRating;
  *
  */
 public class Review {
-	
-	 private String downVotes;
 
-	    private String upVotes;
+	private String downVotes;
 
-	    private String title;
+	private String upVotes;
 
-	    private String reviewText;
+	private String title;
 
-	    private String name;
+	private String reviewText;
 
-	    private String submissionTime;
+	private String name;
 
-	    private String reviewer;
+	private String submissionTime;
 
-	    private ProductAttribute[] productAttributes;
+	private String reviewer;
 
-	    private OverallRating overallRating;
+	private ProductAttribute[] productAttributes;
 
-	    public String getDownVotes ()
-	    {
-	        return downVotes;
-	    }
+	private OverallRating overallRating;
 
-	    public void setDownVotes (String downVotes)
-	    {
-	        this.downVotes = downVotes;
-	    }
+	public String getDownVotes() {
+		return downVotes;
+	}
 
-	    public String getUpVotes ()
-	    {
-	        return upVotes;
-	    }
+	public void setDownVotes(String downVotes) {
+		this.downVotes = downVotes;
+	}
 
-	    public void setUpVotes (String upVotes)
-	    {
-	        this.upVotes = upVotes;
-	    }
+	public String getUpVotes() {
+		return upVotes;
+	}
 
-	    public String getTitle ()
-	    {
-	        return title;
-	    }
+	public void setUpVotes(String upVotes) {
+		this.upVotes = upVotes;
+	}
 
-	    public void setTitle (String title)
-	    {
-	        this.title = title;
-	    }
+	public String getTitle() {
+		return title;
+	}
 
-	    public String getReviewText ()
-	    {
-	        return reviewText;
-	    }
+	public void setTitle(String title) {
+		this.title = title;
+	}
 
-	    public void setReviewText (String reviewText)
-	    {
-	        this.reviewText = reviewText;
-	    }
+	public String getReviewText() {
+		return reviewText;
+	}
 
-	    public String getName ()
-	    {
-	        return name;
-	    }
+	public void setReviewText(String reviewText) {
+		this.reviewText = reviewText;
+	}
 
-	    public void setName (String name)
-	    {
-	        this.name = name;
-	    }
+	public String getName() {
+		return name;
+	}
 
-	    public String getSubmissionTime ()
-	    {
-	        return submissionTime;
-	    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-	    public void setSubmissionTime (String submissionTime)
-	    {
-	        this.submissionTime = submissionTime;
-	    }
+	public String getSubmissionTime() {
+		return submissionTime;
+	}
 
-	    public String getReviewer ()
-	    {
-	        return reviewer;
-	    }
+	public void setSubmissionTime(String submissionTime) {
+		this.submissionTime = submissionTime;
+	}
 
-	    public void setReviewer (String reviewer)
-	    {
-	        this.reviewer = reviewer;
-	    }
+	public String getReviewer() {
+		return reviewer;
+	}
 
-	    public ProductAttribute[] getProductAttribute ()
-	    {
-	        return productAttributes;
-	    }
+	public void setReviewer(String reviewer) {
+		this.reviewer = reviewer;
+	}
 
-	    public void setProductAttributes (ProductAttribute[] productAttribute)
-	    {
-	        this.productAttributes = productAttribute;
-	    }
+	public ProductAttribute[] getProductAttribute() {
+		return productAttributes;
+	}
 
-	    public OverallRating getOverallRating ()
-	    {
-	        return overallRating;
-	    }
+	public void setProductAttributes(ProductAttribute[] productAttribute) {
+		this.productAttributes = productAttribute;
+	}
 
-	    public void setOverallRating (OverallRating overallRating)
-	    {
-	        this.overallRating = overallRating;
-	    }
+	public OverallRating getOverallRating() {
+		return overallRating;
+	}
 
-	    @Override
-	    public String toString()
-	    {
-	        return "ClassPojo [downVotes = "+downVotes+", upVotes = "+upVotes+", title = "+title+", reviewText = "+reviewText+", name = "+name+", submissionTime = "+submissionTime+", reviewer = "+reviewer+", productAttributes = "+productAttributes+", overallRating = "+overallRating+"]";
-	    }
+	public void setOverallRating(OverallRating overallRating) {
+		this.overallRating = overallRating;
+	}
+
+	@Override
+	public String toString() {
+		return "ClassPojo [downVotes = " + downVotes + ", upVotes = " + upVotes + ", title = " + title
+				+ ", reviewText = " + reviewText + ", name = " + name + ", submissionTime = " + submissionTime
+				+ ", reviewer = " + reviewer + ", productAttributes = " + productAttributes + ", overallRating = "
+				+ overallRating + "]";
+	}
 
 }

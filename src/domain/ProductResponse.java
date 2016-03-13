@@ -3,67 +3,80 @@
  */
 package domain;
 
-
 import java.util.List;
+
 /**
  * @author eyob mokria
  *
  */
 public class ProductResponse {
-	
 
-	  public ProductResponse() {
-	    // TODO Auto-generated constructor stub
-	  }
-	 
-	 private String   query;
-	 private String  sort;
-	 private String  responseGroup ;
-	 private long  totalResults ;
-	 private long  start;
-	 private long  numItems ;
-	 private List<Item> items;
+	public ProductResponse() {
+		// TODO Auto-generated constructor stub
+	}
+
+	private String query;
+	private String sort;
+	private String responseGroup;
+	private long totalResults;
+	private long start;
+	private long numItems;
+	private List<Item> items;
+
 	public String getQuery() {
-	  return query;
+		return query;
 	}
+
 	public void setQuery(String query) {
-	  this.query = query;
+		this.query = query;
 	}
+
 	public String getSort() {
-	  return sort;
+		return sort;
 	}
+
 	public void setSort(String sort) {
-	  this.sort = sort;
+		this.sort = sort;
 	}
+
 	public String getResponseGroup() {
-	  return responseGroup;
+		return responseGroup;
 	}
+
 	public void setResponseGroup(String responseGroup) {
-	  this.responseGroup = responseGroup;
+		this.responseGroup = responseGroup;
 	}
+
 	public long getTotalResults() {
-	  return totalResults;
+		return totalResults;
 	}
+
 	public void setTotalResults(long totalResults) {
-	  this.totalResults = totalResults;
+		this.totalResults = totalResults;
 	}
+
 	public long getStart() {
-	  return start;
+		return start;
 	}
+
 	public void setStart(long start) {
-	  this.start = start;
+		this.start = start;
 	}
+
 	public long getNumItems() {
-	  return numItems;
+		return numItems;
 	}
+
 	public void setNumItems(long numItems) {
-	  this.numItems = numItems;
+		this.numItems = numItems;
 	}
+
 	public List<Item> getItems() {
-	  return items;
+		return items;
 	}
+
 	public void setItems(List<Item> items) {
-	  this.items = items;
+		this.items = items;
 	}
 
 }

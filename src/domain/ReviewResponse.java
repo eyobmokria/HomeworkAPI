@@ -10,8 +10,8 @@ package domain;
 public class ReviewResponse {
 	
 
-	  private long itemId;
-	  private long salePrice;
+	 private long itemId;
+	 private long salePrice;
 	 private String  name;
 	 private String  upc;
 	 private String  categoryPath;

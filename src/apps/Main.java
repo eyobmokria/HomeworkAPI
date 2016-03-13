@@ -22,7 +22,7 @@ public class Main {
 	  public static void main(String[] args) {
 	    // first step call first product webserice.
 	    try {
-	      URL url = new URL("http://www.example.com/customers");
+	      URL url = new URL("");
 	      HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 	      connection.setDoOutput(true);
 	      connection.setInstanceFollowRedirects(false);
@@ -41,10 +41,10 @@ public class Main {
 	    }
 	  }
 
-	  // second step map the response with Product Response.class
+	  // step 2 map the response with Product Response.class
 	  // step 3 retrive the first Item Id
-	  // 4 call get recommendation products.
-	  // List of productResponse will be returned
+	  // step 4 call get recommendation products.
+	  // list of productResponse will be returned
 	  // for each products , look call the review service,
 	  // returned object will map with Review Response object.
 
