@@ -11,7 +11,7 @@ public class ReviewResponse {
 	
 
 	 private long itemId;
-	 private long salePrice;
+	 private double salePrice;
 	 private String  name;
 	 private String  upc;
 	 private String  categoryPath;
@@ -26,10 +26,10 @@ public class ReviewResponse {
 	public void setItemId(long itemId) {
 	  this.itemId = itemId;
 	}
-	public long getSalePrice() {
+	public double getSalePrice() {
 	  return salePrice;
 	}
-	public void setSalePrice(long salePrice) {
+	public void setSalePrice(double salePrice) {
 	  this.salePrice = salePrice;
 	}
 	public String getName() {

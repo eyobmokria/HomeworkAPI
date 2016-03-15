@@ -61,7 +61,7 @@ public class Item {
 
 	private String productUrl;
 
-	private double salePrice;
+	private String salePrice;
 
 	private String modelNumber;
 
@@ -265,11 +265,11 @@ public class Item {
 		this.productUrl = productUrl;
 	}
 
-	public double getSalePrice() {
+	public String getSalePrice() {
 		return salePrice;
 	}
 
-	public void setSalePrice(double salePrice) {
+	public void setSalePrice(String salePrice) {
 		this.salePrice = salePrice;
 	}
 
