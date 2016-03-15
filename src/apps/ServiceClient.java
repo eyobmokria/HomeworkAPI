@@ -86,11 +86,7 @@ public class ServiceClient {
 			ReviewResponse reviewResponse = client.gson.fromJson(reviewStr, ReviewResponse.class);
 
 			System.out.println(index++ + " " + reviewResponse.toString());
-			if (reviewResponse.getReviews() != null) {
-				for (Review review : reviewResponse.getReviews()) {
-					System.out.println(review);
-				}
-			}
+
 
 		}
 
