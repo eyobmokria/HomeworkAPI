@@ -19,6 +19,7 @@ import domain.Item;
 import domain.ProductResponse;
 import domain.Review;
 import domain.ReviewResponse;
+import domain.ReviewedProducts;
 
 /**
  * @author eyob mokria
@@ -72,10 +73,11 @@ public class ServiceClient {
 		long itemId = responseobject.getItems().get(0).getItemId();
 		System.out.println(itemId);
 		String resp;
-		List<Item> respObject = null;		
+		List<Item> respObject = null;	
+		
 		if (itemId>0){
 			resp = client.invokeservice(client.PRODUCT_URL + itemId);
-			//System.out.println(resp);		
+			System.out.println(resp);		
 			
 			respObject = client.gson.fromJson(resp, new TypeToken<List<Item>>(){}.getType()); 
 			System.out.println(respObject.size());
@@ -84,15 +86,17 @@ public class ServiceClient {
 		
 		
 		for (int i = 0; i < respObject.size(); i++) {
+			
+			//ReviewedProducts reviedProd = new ReviewedProducts();
 			System.out.println(client.REVIEW_URL + respObject.get(i).getItemId()+ client.APIKEY);
 			String reviewStr = invokeservice( client.REVIEW_URL + respObject.get(i).getItemId()+ client.APIKEY);
 			ReviewResponse reviewResponse = client.gson.fromJson(reviewStr,ReviewResponse.class);
 			System.out.println(reviewResponse.getReviews());
-//			if(reviewResponse.getReviews() != null){
-//			for(Review review:reviewResponse.getReviews() ){
-//				 System.out.println(review.getName();
-//			}
-//			}
+			if(reviewResponse.getReviews() != null){
+			for(Review review:reviewResponse.getReviews() ){
+				 System.out.println(review);
+			}
+			}
 
 		}
 		
