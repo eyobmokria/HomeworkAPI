@@ -6,5 +6,5 @@ then use the first item as a base to retrieve 10 recommended products and order 
 to their customer review. the application searches for query=tv and returns 10 recommanded 
 products and thier review. to execute the application
 
-Use ./java ServiceClientor
+Use ./java ServiceCliento
 
