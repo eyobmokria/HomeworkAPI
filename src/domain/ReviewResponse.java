@@ -3,6 +3,8 @@
  */
 package domain;
 
+import java.util.Arrays;
+
 /**
  * @author eyob mokria
  *
@@ -94,5 +96,18 @@ public class ReviewResponse {
 	}
 	private  ReviewStatistics reviewStatistics;
 	 private boolean availableOnline;
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Recommended Porduct [itemId=" + itemId + ", salePrice=" + salePrice + ", name=" + name + ", upc=" + upc
+				+ ", categoryPath=" + categoryPath + ", brandName=" + brandName + ", productTrackingUrl="
+				+ productTrackingUrl + ", productUrl=" + productUrl + ", categoryNode=" + categoryNode + ", reviews="
+				+ Arrays.toString(reviews) + ", reviewStatistics=" + reviewStatistics + ", availableOnline="
+				+ availableOnline + "]";
+	}
+	 
+	 
 
 }

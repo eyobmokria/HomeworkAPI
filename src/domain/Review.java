@@ -103,7 +103,7 @@ public class Review {
 
 	@Override
 	public String toString() {
-		return "ClassPojo [downVotes = " + downVotes + ", upVotes = " + upVotes + ", title = " + title
+		return "Review Detail  [downVotes = " + downVotes + ", upVotes = " + upVotes + ", title = " + title
 				+ ", reviewText = " + reviewText + ", name = " + name + ", submissionTime = " + submissionTime
 				+ ", reviewer = " + reviewer + ", productAttributes = " + productAttributes + ", overallRating = "
 				+ overallRating + "]";
