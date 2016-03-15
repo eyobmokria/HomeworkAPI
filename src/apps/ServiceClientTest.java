@@ -5,6 +5,8 @@ package apps;
 
 import static org.junit.Assert.*;
 import javax.persistence.NoResultException;
+
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -23,11 +25,13 @@ public class ServiceClientTest {
 		ServiceClient sc = new ServiceClient();
 		try {
 
-			String str = sc.invokeservice("http://api.walmartlabs.com/v1/search?apiKey=3guft8a6zzakcuzsjyxt73xt&query=" + "tv");
-
+		String str = sc.invokeservice("http://api.walmartlabs.com/v1/search?apiKey=3guft8a6zzakcuzsjyxt73xt&query=" + "tv");
+        Assert.assertTrue(str.isEmpty() || str.equals(null));
+        	
+        
 		} catch (NoResultException e) {
 			// TODO: handle exception
-			System.out.println(e.getMessage());
+			System.out.println(e.getMessage()+" invalid input");
 		}
 	}
 
